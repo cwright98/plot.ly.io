@@ -73,7 +73,7 @@ function init() {
     });
 }
 
-function change(newSample) {
+function optionChanged(newSample) {
     createChart(newSample);
     getMetaData(newSample);
 }
