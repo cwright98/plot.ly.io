@@ -1,6 +1,4 @@
-//this is a comment!
-//so is this!
-//impressed?
+
 
 function getMetaData(sample) {
     var metaURL= '/metadata/${sample}';
@@ -60,7 +58,7 @@ function createChart(sample) {
 function init() {
     console.log('is this thing on?')
     var selectData=d3.select('#selDataset');
-    d3.json("samples.json").then((sampleNames) => {
+    d3.json("data/samples.json").then((sampleNames) => {
         sampleNames.forEach((sample) => {
             selectData
                 .append("option")
